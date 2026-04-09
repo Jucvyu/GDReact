@@ -1,5 +1,8 @@
 import React from 'react'
+
 import Preview from '/img/preview.jpg'
+
+import { Link } from 'react-router-dom'
 
 import { ApiRyCAxios } from '../services/ApiRyC_axios'
 
@@ -70,6 +73,8 @@ export const Content = () => {
                                     variant="contained"
                                     size="large"
                                     endIcon={<ArrowForward />}
+                                    component={Link}
+                                    to='/login'
                                     sx={{
                                         backgroundColor: '#00CC00',
                                         color: '#000000',
@@ -92,7 +97,8 @@ export const Content = () => {
                                     variant="outlined"
                                     size="large"
                                     startIcon={<GitHubIcon />}
-                                    
+                                    href='https://github.com/Jucvyu/GDReact'
+                                    target="_blank"
                                     sx={{
                                         color: '#FFFFFF',
                                         borderColor: '#333333',
@@ -395,6 +401,8 @@ export const Content = () => {
                         variant="contained"
                         size="large"
                         endIcon={<ArrowForward />}
+                        component={Link}
+                        to='/login'
                         sx={{
                             backgroundColor: '#00CC00',
                             color: '#000000',

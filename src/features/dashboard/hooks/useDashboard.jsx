@@ -171,7 +171,7 @@ export const useDashboard = () => {
     const logout = () => {
         localStorage.removeItem("token");
         window.location.href = "/login"; // redirige a login
-        alert("Sesión cerrada, por favor, inicia sesión nuevamente");
+        alert("Sesión cerrada");
     };
 
     return {
