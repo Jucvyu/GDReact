@@ -6,7 +6,9 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/auth.routes.js";
 import expenseRoutes from "./routes/expense.routes.js";
 
-dotenv.config();
+dotenv.config({
+    path: ".env"
+});
 
 const app = express();
 

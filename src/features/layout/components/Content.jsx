@@ -69,51 +69,53 @@ export const Content = () => {
                             </Typography>
 
                             <Box sx={{ display: 'flex', gap: 2, justifyContent: { xs: 'center', md: 'flex-start' } }}>
-                                <Button
-                                    variant="contained"
-                                    size="large"
-                                    endIcon={<ArrowForward />}
-                                    component={Link}
-                                    to='/login'
-                                    sx={{
-                                        backgroundColor: '#00CC00',
-                                        color: '#000000',
-                                        fontWeight: 600,
-                                        px: 4,
-                                        py: 1.5,
-                                        textTransform: 'none',
-                                        fontSize: '1.1rem',
-                                        '&:hover': {
-                                            backgroundColor: '#00B000',
-                                            transform: 'translateY(-2px)',
-                                            boxShadow: '0 4px 20px rgba(0, 204, 0, 0.3)'
-                                        }
-                                    }}
-                                >
-                                    Comenzar Gratis
-                                </Button>
+                                <Grid>
+                                    <Button
+                                        variant="contained"
+                                        size="large"
+                                        endIcon={<ArrowForward />}
+                                        component={Link}
+                                        to='/login'
+                                        sx={{
+                                            backgroundColor: '#00CC00',
+                                            color: '#000000',
+                                            fontWeight: 600,
+                                            px: 4,
+                                            py: 1.5,
+                                            textTransform: 'none',
+                                            fontSize: '1.1rem',
+                                            '&:hover': {
+                                                backgroundColor: '#00B000',
+                                                transform: 'translateY(-2px)',
+                                                boxShadow: '0 4px 20px rgba(0, 204, 0, 0.3)'
+                                            }
+                                        }}
+                                    >
+                                        Comenzar Gratis
+                                    </Button>
 
-                                <Button
-                                    variant="outlined"
-                                    size="large"
-                                    startIcon={<GitHubIcon />}
-                                    href='https://github.com/Jucvyu/GDReact'
-                                    target="_blank"
-                                    sx={{
-                                        color: '#FFFFFF',
-                                        borderColor: '#333333',
-                                        textTransform: 'none',
-                                        px: 4,
-                                        py: 1.5,
-                                        fontWeight: 600,
-                                        '&:hover': {
-                                            borderColor: '#00CC00',
-                                            backgroundColor: 'rgba(0, 204, 0, 0.1)'
-                                        }
-                                    }}
-                                >
-                                    Ver Repositorio
-                                </Button>
+                                    <Button
+                                        variant="outlined"
+                                        size="large"
+                                        startIcon={<GitHubIcon />}
+                                        href='https://github.com/Jucvyu/GDReact'
+                                        target="_blank"
+                                        sx={{
+                                            color: '#FFFFFF',
+                                            borderColor: '#333333',
+                                            textTransform: 'none',
+                                            px: 4,
+                                            py: 1.5,
+                                            fontWeight: 600,
+                                            '&:hover': {
+                                                borderColor: '#00CC00',
+                                                backgroundColor: 'rgba(0, 204, 0, 0.1)'
+                                            }
+                                        }}
+                                    >
+                                        Ver Repositorio
+                                    </Button>
+                                </Grid>
                             </Box>
                         </Grid>
 
@@ -124,7 +126,7 @@ export const Content = () => {
                                     border: '1px solid #003300',
                                     borderRadius: 2,
                                     minHeight: '300px',
-                                    p: '4px', 
+                                    p: '4px',
                                     display: 'flex'
                                 }}
                             >
@@ -136,7 +138,7 @@ export const Content = () => {
                                         width: '100%',
                                         height: '100%',
                                         objectFit: 'cover',
-                                        borderRadius: 1 
+                                        borderRadius: 1
                                     }}
                                 />
                             </Box>
